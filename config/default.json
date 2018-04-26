@@ -8,6 +8,7 @@
     "pass": "postgres",
     "options": {
       "dialect": "postgres",
+      "dialectOptions": {},
       "host": "localhost",
       "define": {
         "timestamps": false,
@@ -24,6 +25,9 @@
     "pass": "e548db61e019ca1e14c3e0eae05777ddf2bd8d43f970600abaaf135624cc8835",
     "options": {
       "dialect": "postgres",
+      "dialectOptions": {
+        "ssl": true
+      },
       "host": "ec2-174-129-41-64.compute-1.amazonaws.com",
       "define": {
         "timestamps": false,
