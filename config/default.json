@@ -1,0 +1,24 @@
+{
+  "app": {
+    "port": 3000
+  },
+  "db": {
+    "name": "cwp-32",
+    "user": "postgres",
+    "pass": "postgres",
+    "options": {
+      "dialect": "postgres",
+      "host": "localhost",
+      "define": {
+        "timestamps": false,
+        "paranoid": false,
+        "freezeTableName": true
+      },
+      "logging": false
+    }
+  },
+  "cookie": {
+    "key": "secret key",
+    "auth": "__auth_id"
+  }
+}
