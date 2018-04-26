@@ -2,7 +2,7 @@
   "app": {
     "port": 3000
   },
-  "db": {
+  "db_loc": {
     "name": "cwp-32",
     "user": "postgres",
     "pass": "postgres",
@@ -17,6 +17,23 @@
       "logging": false
     }
   },
+
+  "db_prod": {
+    "name": "dehu8vnap7m3v5",
+    "user": "pjnfshayzowdzt",
+    "pass": "e548db61e019ca1e14c3e0eae05777ddf2bd8d43f970600abaaf135624cc8835",
+    "options": {
+      "dialect": "postgres",
+      "host": "ec2-174-129-41-64.compute-1.amazonaws.com",
+      "define": {
+        "timestamps": false,
+        "paranoid": false,
+        "freezeTableName": true
+      },
+      "logging": false
+    }
+  },
+
   "cookie": {
     "key": "secret key",
     "auth": "__auth_id"

@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const config = require('config');
 const Sequelize = require('sequelize');
 
+global.node_env = process.env.NODE_ENV;
+
 const app = express();
 const db = require('./db')(Sequelize);
 const api = require('./controllers/api');
