@@ -2,7 +2,7 @@
   "app": {
     "port": 3000
   },
-  "db_loc": {
+  "dbLoc": {
     "name": "cwp-32",
     "user": "postgres",
     "pass": "postgres",
@@ -19,7 +19,7 @@
     }
   },
 
-  "db_prod": {
+  "dbProd": {
     "name": "dehu8vnap7m3v5",
     "user": "pjnfshayzowdzt",
     "pass": "e548db61e019ca1e14c3e0eae05777ddf2bd8d43f970600abaaf135624cc8835",

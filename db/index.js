@@ -4,8 +4,8 @@ const {commit, repo} = require('./models');
 module.exports = (Sequelize) => {
     let dbConfig;
 	switch (global.node_env) {
-		case 'prod': dbConfig = config.db_prod; break;
-		default: dbConfig = config.db_loc;
+		case 'prod': dbConfig = config.dbProd; break;
+		default: dbConfig = config.dbLoc;
 	}
 
 	const sequelize = new Sequelize(dbConfig.name, dbConfig.user, dbConfig.pass, dbConfig.options);

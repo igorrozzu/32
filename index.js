@@ -24,7 +24,7 @@ const tempDataToDb = require('./tempDataToDb.helper');
 
 	app.use((err, req, res, next) => res.status(err.status || 500).json(err.message));
 
-	app.listen(config.app.port, () => {
+	app.listen(process.env.PORT || config.app.port, () => {
 		console.log('server listen port 3000');
 	});
 })();
