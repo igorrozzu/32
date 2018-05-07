@@ -17,7 +17,7 @@ const tempDataToDb = require('./tempDataToDb.helper');
 	app.use(bodyParser.json());
 
     app.get('/', (req, res) => {
-        res.send('CWP-32 / Heroku deploy!');
+        res.send('CWP-32 / Heroku deploy! There are some changes on main page');
     });
 
 	app.use('/api', api(db));
